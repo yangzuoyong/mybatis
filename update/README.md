@@ -1,0 +1,19 @@
+mybatis用到的设计模式
+工厂：SqlSessionFactory
+单例：SqlSessionFactory、Configuration
+建造者：SqlSessionFactoryBuilder
+装饰者：CachingExector simple resue batch 
+LRUCahe FifoCache PerpectualCache
+代理：Spring集成Mybaits SqlSessionInterceptor
+MapperProx
+Plugin
+延时加载 ProxyFactory Javassit CGlib
+Log ConnectonLogger StatementLogger
+PooledConnection
+适配器 具体的日志实现 sl4j 适配
+模板方法 Executor BaseExcutor simple reuse batch
+责任链 InterceptorChain
+策略模式 RoutingStatementHandler
+SimpleStatementHandler
+PreparedStatementHandler
+CallableStatementHandler
